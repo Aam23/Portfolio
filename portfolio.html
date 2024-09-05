@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.A.Mintah</title>
+
+    <!----- FAVICON ----->
+    <link rel="shortcut icon" href="asset/images/favicon.png" type="image/x-icon">
+
+    <!----- CSS STYLE ----->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-body">
+
+
+    <!----- HEADER SECTION ----->
+    <header class="header">
+
+        <div class="container">
+
+            <div class="logo">
+                <a href="index.html">
+                 <img src="asset/images/logo.png" alt="logo">
+                </a>
+             </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="portfolio.html" class="active">Porfolio</a>
+                <a href="resume.html">Resume</a>
+            </nav>
+
+            <div class="menu-icon" onclick="toggleMenu()">
+                <!-- Closed Icon -->
+                <svg class="icon icon-closed" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" {...props}>
+                    <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h14M5 12h14M5 7h8" />
+                </svg>
+                <!-- Open Icon -->
+                <svg class="icon icon-open"  xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="-6 -6 24 24" {...props}>
+                    <path fill="white" d="m7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485L2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535l3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z" />
+                </svg>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!----- PORTFOLIO SECTION ----->
+    <section class="porfolio-hero">
+        <div class="container">
+
+            <div class="main-title">
+                <div class="title">
+                    <div class="dash">
+                        <div class="line-dash"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" style="opacity: 75%;">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                                <path fill="white" d="M10.586 2.808a2 2 0 0 1 2.828 0l7.778 7.778a2 2 0 0 1 0 2.828l-7.778 7.778a2 2 0 0 1-2.828 0l-7.778-7.778a2 2 0 0 1 0-2.828z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <p>PORTFOLIO</p>
+                </div>
+                <h4>Creative Works</h4>
+            </div>
+
+            <div class="main-content">
+                
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab-link active" onclick="openTab(event, 'All')">All</button>
+                    <button class="tab-link" onclick="openTab(event, 'Designs')">Designs</button>
+                    <button class="tab-link" onclick="openTab(event, 'Development')">Front-End</button>
+                    <button class="tab-link" onclick="openTab(event, '3DArt')">3D Art</button>
+                </div>
+            
+                <!-- Tab Content -->
+                <div class="content">
+                    <div id="All" class="tab-content active">
+                        <div class="cards">
+
+                            <div class="card">
+    
+                                <div class="image">
+                                    <a href="https://www.behance.net/gallery/206884535/Asset-Tracking-System">
+                                        <img src="asset/images/d1.jpg" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="text">
+                                    <p>Asset Tracking System</p>
+    
+                                    <div class="icon">
+                                        <a href="https://www.behance.net/gallery/206884535/Asset-Tracking-System">
+                                            <p>Design Preview</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                            <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                        </svg>
+                                        </a>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                            <div class="card">
+    
+                                <div class="image">
+                                   <a href="https://www.behance.net/gallery/202858823/ReEarth-Plastic-Waste-Recycling-Website">
+                                    <img src="asset/images/d2.jpg" alt="">
+                                   </a>
+                                </div>
+    
+                                <div class="text">
+                                    <p>ReEarth</p>
+    
+                                    <div class="icon">
+                                      <a href="https://www.behance.net/gallery/202858823/ReEarth-Plastic-Waste-Recycling-Website">
+                                        <p>Design Preview</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                            <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                        </svg>
+                                      </a>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                            <div class="card">
+    
+                                <div class="image">
+                                   <a href=""><a href="https://www.behance.net/gallery/199713953/Shopix-eCommerce-Website">
+                                    <img src="asset/images/d3.jpg" alt="">
+                                   </a>
+                                </div>
+    
+                                <div class="text">
+                                    <p>Shopix E-commerce </p>
+    
+                                    <div class="icon">
+                                        <a href="https://www.behance.net/gallery/199713953/Shopix-eCommerce-Website">
+                                            <p>Design Preview</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                            <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                        </svg>
+                                        </a>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                           </div>
+
+                           <div class="developed">
+
+                            
+                        <div class="cards">
+
+                            <div class="card">
+    
+                                <div class="image">
+                                   <a href="https://ogames-studio.netlify.app/">
+                                    <img src="asset/images/dv1.jpg" alt="">
+                                   </a>
+                                </div>
+    
+                                <div class="text develop"">
+
+                                   <div class="main-text">
+                                    <p>Ogames Studio</p>
+    
+                                    <div class="icon">
+                                        <a href="https://ogames-studio.netlify.app/">
+                                            <p>Live View</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                                <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                   </div>
+
+                                   <div class="code-text">
+                                    <a href="https://github.com/Aam23/ogames?tab=readme-ov-file">
+                                        Code
+                                    </a>
+                                   </div>
+
+                                </div>
+    
+                            </div>
+    
+                            <div class="card">
+    
+                                <div class="image">
+                                   <a href="https://hospital-fpm.netlify.app/landing.html">
+                                    <img src="asset/images/dv2.jpg" alt="">
+                                   </a>
+                                </div>
+    
+                                <div class="text develop">
+
+                                    <div class="main-text">
+                                     <p>Hospital FPM</p>
+     
+                                     <div class="icon">
+                                         <a href="https://hospital-fpm.netlify.app/landing.html">
+                                             <p>Live View</p>
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                                 <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                             </svg>
+                                         </a>
+                                     </div>
+                                    </div>
+ 
+                                    <div class="code-text">
+                                     <a href="https://github.com/Aam23/hospital-fpm?tab=readme-ov-file">
+                                         Code
+                                     </a>
+                                    </div>
+ 
+                                 </div>
+     
+    
+                            </div>
+    
+                            <div class="card">
+    
+                                <div class="image">
+                                   <a href="https://voyagett.netlify.app/">
+                                    <img src="asset/images/dv3.jpg" alt="">
+                                   </a>
+                                </div>
+                                <div class="text develop">
+
+                                    <div class="main-text">
+                                     <p>Voyage</p>
+     
+                                     <div class="icon">
+                                         <a href="https://voyagett.netlify.app/">
+                                             <p>Live View</p>
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                                 <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                             </svg>
+                                         </a>
+                                     </div>
+                                    </div>
+ 
+                                    <div class="code-text">
+                                     <a href="https://github.com/Aam23/voyage">
+                                         Code
+                                     </a>
+                                    </div>
+ 
+                                 </div>
+     
+    
+                            </div>
+    
+                           </div>
+                          
+                           </div>
+
+                           <div class="art">
+
+                            <div class="cards">
+
+                                <div class="card">
+    
+                                    <div class="image">
+                                        <a href="https://www.therookies.co/projects/70052">
+                                            <img src="asset/images/b1.jpg" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="text">
+                                        <p>CoCo Night Kiosk</p>
+        
+                                        <div class="icon">
+                                            <a href="https://www.therookies.co/projects/70052">
+                                                <p>3D View</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                                <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                            </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+        
+                                </div>
+    
+                                <div class="card">
+    
+                                    <div class="image">
+                                        <a href="https://www.instagram.com/buddy_aam/">
+                                            <img src="asset/images/b2.jpg" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="text">
+                                        <p>Cute Characters</p>
+        
+                                        <div class="icon">
+                                            <a href="https://www.instagram.com/buddy_aam/">
+                                                <p>3D View</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                                <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                            </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+        
+                                </div>
+    
+                                <div class="card">
+    
+                                    <div class="image">
+                                        <a href="https://www.therookies.co/projects/70048">
+                                            <img src="asset/images/b3.jpg" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="text">
+                                        <p>Laboratory</p>
+        
+                                        <div class="icon">
+                                            <a href="https://www.therookies.co/projects/70048">
+                                                <p>3D View</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                                <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                            </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                               </div>
+
+                           </div>
+
+                    </div>
+                    <div id="Designs" class="tab-content">
+
+                       <div class="cards">
+
+                        <div class="card">
+
+                            <div class="image">
+                                <a href="https://www.behance.net/gallery/206884535/Asset-Tracking-System">
+                                    <img src="asset/images/d1.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="text">
+                                <p>Asset Tracking System</p>
+
+                                <div class="icon">
+                                    <a href="https://www.behance.net/gallery/206884535/Asset-Tracking-System">
+                                        <p>Design Preview</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                        <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                    </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+
+                            <div class="image">
+                               <a href="https://www.behance.net/gallery/202858823/ReEarth-Plastic-Waste-Recycling-Website">
+                                <img src="asset/images/d2.jpg" alt="">
+                               </a>
+                            </div>
+
+                            <div class="text">
+                                <p>ReEarth</p>
+
+                                <div class="icon">
+                                  <a href="https://www.behance.net/gallery/202858823/ReEarth-Plastic-Waste-Recycling-Website">
+                                    <p>Design Preview</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                        <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+
+                            <div class="image">
+                               <a href="https://www.behance.net/gallery/199713953/Shopix-eCommerce-Website">
+                                <img src="asset/images/d3.jpg" alt="">
+                               </a>
+                            </div>
+
+                            <div class="text">
+                                <p>Shopix E-commerce </p>
+
+                                <div class="icon">
+                                    <a href="https://www.behance.net/gallery/199713953/Shopix-eCommerce-Website">
+                                        <p>Design Preview</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                        <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                    </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                       </div>
+                        
+                    </div>
+                    <div id="Development" class="tab-content">
+
+                        <div class="cards">
+
+                            <div class="card">
+    
+                                <div class="image">
+                                   <a href="https://ogames-studio.netlify.app/">
+                                    <img src="asset/images/dv1.jpg" alt="">
+                                   </a>
+                                </div>
+    
+                                <div class="text develop"">
+
+                                   <div class="main-text">
+                                    <p>Ogames Studio</p>
+    
+                                    <div class="icon">
+                                        <a href="https://ogames-studio.netlify.app/">
+                                            <p>Live View</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                                <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                   </div>
+
+                                   <div class="code-text">
+                                    <a href="https://github.com/Aam23/ogames">
+                                        Code
+                                    </a>
+                                   </div>
+
+                                </div>
+    
+                            </div>
+    
+                            <div class="card">
+    
+                                <div class="image">
+                                   <a href="https://hospital-fpm.netlify.app/landing.html">
+                                    <img src="asset/images/dv2.jpg" alt="">
+                                   </a>
+                                </div>
+    
+                                <div class="text develop">
+
+                                    <div class="main-text">
+                                     <p>Hospital FPM</p>
+     
+                                     <div class="icon">
+                                         <a href="https://hospital-fpm.netlify.app/landing.html">
+                                             <p>Live View</p>
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                                 <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                             </svg>
+                                         </a>
+                                     </div>
+                                    </div>
+ 
+                                    <div class="code-text">
+                                     <a href="https://github.com/Aam23/hospital-fpm">
+                                         Code
+                                     </a>
+                                    </div>
+ 
+                                 </div>
+     
+    
+                            </div>
+    
+                            <div class="card">
+    
+                                <div class="image">
+                                   <a href="https://voyagett.netlify.app/">
+                                    <img src="asset/images/dv3.jpg" alt="">
+                                   </a>
+                                </div>
+                                <div class="text develop">
+
+                                    <div class="main-text">
+                                     <p>Voyage</p>
+     
+                                     <div class="icon">
+                                         <a href="https://voyagett.netlify.app/">
+                                             <p>Live View</p>
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                                 <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                             </svg>
+                                         </a>
+                                     </div>
+                                    </div>
+ 
+                                    <div class="code-text">
+                                     <a href="https://github.com/Aam23/voyage">
+                                         Code
+                                     </a>
+                                    </div>
+ 
+                                 </div>
+     
+    
+                            </div>
+    
+                           </div>
+                        
+                    </div>
+                    <div id="3DArt" class="tab-content">
+
+                        <div class="cards">
+
+                            <div class="card">
+
+                                <div class="image">
+                                    <a href="https://www.therookies.co/projects/70052">
+                                        <img src="asset/images/b1.jpg" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="text">
+                                    <p>CoCo Night Kiosk</p>
+    
+                                    <div class="icon">
+                                        <a href="https://www.therookies.co/projects/70052">
+                                            <p>3D View</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                            <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                        </svg>
+                                        </a>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                            <div class="card">
+
+                                <div class="image">
+                                    <a href="https://www.instagram.com/buddy_aam/">
+                                        <img src="asset/images/b2.jpg" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="text">
+                                    <p>Cute Characters</p>
+    
+                                    <div class="icon">
+                                        <a href="https://www.instagram.com/buddy_aam/">
+                                            <p>3D View</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                            <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                        </svg>
+                                        </a>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                            <div class="card">
+
+                                <div class="image">
+                                    <a href="https://www.therookies.co/projects/70048">
+                                        <img src="asset/images/b3.jpg" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="text">
+                                    <p>Laboratory</p>
+    
+                                    <div class="icon">
+                                        <a href="https://www.therookies.co/projects/70048">
+                                            <p>3D View</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" {...props}>
+                                            <path fill="none" stroke="white" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0" />
+                                        </svg>
+                                        </a>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                           </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!----- FOOTER SECTION ----->
+    <footer class="footer ">
+
+        <div class="container">
+
+            <div class="designed">
+                <p>Designed and developed by A.A. Mintah</p>
+            </div>
+
+            <div class="rights">
+                <p>© 2024 A.A. Mintah. All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
